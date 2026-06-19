@@ -20,6 +20,7 @@ if not os.path.exists(".env") and os.path.exists(".env.example"):
 
 # Load local environment variables from .env file
 load_dotenv()
+hf_token = os.getenv("HF_API_TOKEN", "")
 
 # App Configuration
 st.set_page_config(
